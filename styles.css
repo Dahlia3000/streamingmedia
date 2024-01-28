@@ -113,14 +113,68 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-@media screen and (min-width: 375px){
-   html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   .scroll{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow-x: auto;
+      overflow-y: hidden;
+   }
+   .scroll section{
+      margin: 10px;
+      position: relative;
+   }
+   .scroll div{
+      position: absolute;
+      top: 251px;
+      background-color: rgba(red, green, blue, alpha);
+      padding: 5px;
+      height: 50px;
+      width: 350px;
+   }
+   dl{
+      display: flex;
+   }
+   dt{
+      padding-right: 5px;
+   }
+   audio{
+      position: absolute;
+      bottom: 150px;
+      left: 5px;
    }
 
+   
+      #trending-songs::-webkit-scrollbar {
+         width: 15px;
+      }
+      #trending-songs::-webkit-scrollbar-track {
+         box-shadow: inset 0 0 15px #590242;
+      }
+      #trending-songs::-webkit-scrollbar-thumb {
+         background: #590242;
+         border-radius: 5px;
+      }
+      #trending-songs ::-webkit-scrollbar-thumb:hover {
+         background: #020659;
+      }
+   
+
+   body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+
+   nav ul{
+      display: grid;
+      grid-template-columns: 1fr;
+   }
 
    nav li{
       list-style: none;
+   }
+   main{
+      display: grid;
+      grid-template-columns: 1fr;
    }
 
    h1{
@@ -136,5 +190,5 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
    }
 
    footer p{
-      font-size: 0.75em;
-   }
+   font-size: 0.75em;
+}
