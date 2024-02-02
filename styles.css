@@ -172,16 +172,6 @@ p{
    font-size: 1em;
 }
 
-div #more-trending{
-   display: flex;
-   justify-content: center;
-   background-color: #590242;
-   color: white;
-   width: 160px;
-   height: 40px;
-
-}
-
 footer p{
 font-size: 0.75em;
 }
@@ -259,7 +249,21 @@ font-size: 0.75em;
    audio ::-webkit-media-controls-enclosure {
    
    }
+
+   #your-playlists{
+      margin-top: 10px;
+   }
    
+   .more-trending{
+      display: block;
+      text-align: center;
+      background-color: #590242;
+      padding: 10px;
+      color: white;
+      width: 160px;
+      height: 40px;
+      margin-left: 30px;
+   }
 
    .scroll2{
       display: grid;
@@ -305,7 +309,76 @@ font-size: 0.75em;
       background: #020659;
    }
       
+   .allplaylists{
+      display: block;
+      text-align: center;
+      background-color: #590242;
+      padding: 10px;
+      color: white;
+      width: 160px;
+      height: 40px;
+      margin-left: 30px;
+   }
 
+   #curated-playlists{
+      margin-top: 10px;
+   }
+
+   .scroll3{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      overflow-x: auto;
+      overflow-y: hidden;
+      width: 375px;
+      background-color: #030A8C;
+   }
+
+   .scroll3 section{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin: 10px;
+      position: relative;
+      background-color: #020659;
+      color: #ffffff;
+      text-align: center;
+   }
+
+   #curated-playlists h3{
+      color: #ffffff;
+      margin: 10px;
+   }
+
+   #curated-playlists img{
+      margin: 10px;
+   }
+
+   #curated-playlists ::-webkit-scrollbar {
+      width: 15px;
+   }
+   #curated-playlists ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 15px #020659;
+   }
+   #curated-playlists ::-webkit-scrollbar-thumb {
+      background: #020659;
+      border-radius: 5px;
+   }
+   #curated-playlists ::-webkit-scrollbar-thumb:hover {
+      background: #020659;
+   }
+
+   .more-curated{
+      display: block;
+      text-align: center;
+      background-color: #590242;
+      padding: 10px;
+      color: white;
+      width: 160px;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 30px;
+   }
+   
    @media screen and (min-width:834px) {
       ul {
             overflow: visible;
