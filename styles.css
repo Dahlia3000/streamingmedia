@@ -241,8 +241,9 @@ footer p{
       color: #590242;
    }
    dt{
-      padding-right: 5px;
+      padding-right: 10px;
       color: #590242;
+      font-style: italic;
    }
    audio{
       position: absolute;
