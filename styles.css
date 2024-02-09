@@ -296,11 +296,12 @@ footer p{
    
    audio ::-webkit-media-controls-play-button{
       background-color: #ffffff;
+      opacity: 0.9;
       border-radius: 50%;
    } 
    
    audio ::-webkit-media-controls-enclosure {
-      background-color: rgba(255, 255, 255, .8);
+    
    }
 
    #your-playlists{
@@ -370,15 +371,15 @@ footer p{
    }
       
    .allplaylists{
-      position: absolute;
+      position: relative;
       background-color: #590242;
       color: white;
       width: 160px;
       height: 40px;
       margin-left: 30px;
       border-radius: 8px;
-      top: 76em;
-      right: 21.7em;
+      top: 10px;
+      right: 10px;
    }
 
    .allplaylists:hover{
@@ -434,15 +435,15 @@ footer p{
    }
 
    .more-curated{
-      position: absolute;
+      position: relative;
       background-color: #590242;
       color: white;
       width: 160px;
       height: 40px;
       margin-left: 30px;
       border-radius: 5px;
-      top: 106em;
-      right: 21.7em;
+      top: 10px;
+      right: 10px;
    }
 
    .more-curated:hover{
@@ -466,12 +467,13 @@ footer p{
 
       body{
          width: 834px;
+         height: 1250px;
          margin-bottom: 0;
          background-color: #ffffff;
       }
 
       nav{
-         width: 100%;
+         width: 834px;
       }
 
       [href="#home"]{
@@ -487,13 +489,20 @@ footer p{
          width: 834px;
       }
       
+      .playlists-columns{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr;
+         width: 834px;
+      }
       .more-trending{
-         right: 30em;
+         right: 32em;
       }
 
       #your-playlists{
-         width: 50.5%;
-         margin: 2em 0;
+         display: grid;
+         grid-column: 1/2;
+         width: 417px;
       }
       
       #your-playlists .scroll2{
@@ -503,6 +512,7 @@ footer p{
          grid-template-columns: repeat(1, 1fr);
          grid-template-rows: repeat(5, 1fr);
          height: 30em;
+         width: 100%;
       }
 
       #your-playlists section{
@@ -534,14 +544,17 @@ footer p{
       }
 
       .allplaylists{
-         top: 97em;
-         right: 37em;
+         top: 10px;
+         right: -215px;
       }
 
       #curated-playlists{
-         width: 49.7%;
+         width: 417px;
          height: 500px;
-         margin: -33.25em  25em;
+         margin: -38.5em  26.07em;
+         display: grid;
+         grid-column: 2/3;
+        
       }
 
       #curated-playlists h2{
@@ -556,6 +569,7 @@ footer p{
          grid-template-columns: repeat(1, 1fr);
          grid-template-rows: repeat(5, 1fr);
          height: 30em;
+         width: 100%;
       }
 
       #curated-playlists section{
@@ -586,8 +600,12 @@ footer p{
          margin-left: .75em;
       }
       .more-curated{
-         top: 85em;
-         right: 2em;
+         top: 10px;
+         right: -215px;
+      }
+
+      footer{
+         margin-top: 640px;
       }
    }
 
