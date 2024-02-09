@@ -289,19 +289,18 @@ footer p{
    #trending-songs ::-webkit-scrollbar-thumb:hover {
       background: #020659;
    }
-   audio ::-webkit-media-controls-mute-button {
+   audio::-webkit-media-controls-mute-button {
       background-color: #ffffff;
       border-radius: 50%;
    }
    
-   audio ::-webkit-media-controls-play-button{
+   audio::-webkit-media-controls-play-button{
       background-color: #ffffff;
-      opacity: 0.9;
       border-radius: 50%;
    } 
    
-   audio ::-webkit-media-controls-enclosure {
-    
+   audio::-webkit-media-controls-enclosure {
+      background-color: rgba(255, 255, 255, 0.6);
    }
 
    #your-playlists{
