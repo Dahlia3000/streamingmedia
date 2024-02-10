@@ -210,7 +210,6 @@ footer{
 footer p{
    color:#590242;
    font-size: 0.75em;
-   margin-bottom: -10px;
 }
 
 
@@ -350,6 +349,9 @@ footer p{
    #your-playlists h3{
       color: #ffffff;
       margin: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+     
    }
  
    #your-playlists img{
@@ -414,6 +416,8 @@ footer p{
    #curated-playlists h3{
       color: #ffffff;
       margin: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
    }
 
    #curated-playlists img{
